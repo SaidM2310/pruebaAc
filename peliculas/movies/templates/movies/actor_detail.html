@@ -1,0 +1,40 @@
+{% extends "movies/base.html" %}
+
+{% block content %}
+
+<div class="p-6 text-white">
+
+    <div class="flex gap-6">
+
+        <img src="https://image.tmdb.org/t/p/w300{{ data.profile_path }}"
+             class="rounded-lg">
+
+        <div>
+            <h1 class="text-3xl font-bold">{{ data.name }}</h1>
+
+            <h2 class="mt-4 text-lg">Biografía</h2>
+            <p class="text-gray-300 mt-2">
+                {{ data.biography }}
+            </p>
+        </div>
+
+    </div>
+
+    <h2 class="text-xl mt-10 mb-4">Conocido por</h2>
+
+    <div class="flex flex-wrap gap-4">
+        {% for movie in my_movies %}
+            <div class="w-40">
+                <a href="/movies/{{ movie.id }}/">
+                <img src="https://image.tmdb.org/t/p/w300{{ movie.poster_path }}" class="rounded-lg">
+                    <p class="text-sky-400 text-sm mt-2">
+                        {{ movie.title }}
+                    </p>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock %}

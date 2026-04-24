@@ -1,0 +1,33 @@
+{% extends "movies/base.html" %}
+
+{% block content %}
+
+<div class="p-6">
+    <h1 class="text-2xl text-white mb-6">Mis reseñas</h1>
+
+    {% if reviews %}
+        <div class="space-y-6">
+            {% for review in reviews %}
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    
+                    <h2 class="text-sky-400 font-bold">
+                        {{ review.movie.title }}
+                    </h2>
+
+                    <p class="text-gray-300 mt-2">
+                        {{ review.review }}
+                    </p>
+
+                    <p class="text-gray-500 text-sm mt-1">
+                        {{ review.created_at }}
+                    </p>
+
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="text-gray-400">No has hecho reseñas aún.</p>
+    {% endif %}
+</div>
+
+{% endblock %}

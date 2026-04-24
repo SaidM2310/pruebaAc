@@ -7,6 +7,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 # Create your models here.
 
 
+
 class Genre(models.Model):
     name = models.CharField(max_length=80)
     
@@ -14,7 +15,8 @@ class Genre(models.Model):
         return self.name
     
 class Person(models.Model):
-    name = models.CharField(max_length=128)
+    name = models.CharField(max_length=100)
+    tmdb_id = models.IntegerField(blank=True, null=True)
     
     def __str__(self):
         return self.name
@@ -52,8 +54,8 @@ class Collection(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
 
-    def __str__(self):
-        return f"{self.user.username} - {self.movie.title}"
+    class Meta:
+        unique_together = ('user', 'movie')
 
 class MovieLike(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

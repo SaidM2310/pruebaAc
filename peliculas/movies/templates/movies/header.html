@@ -28,6 +28,22 @@
                         pt-1 text-sm font-medium text-gray-500 hover:border-gray-300
                         hover:text-gray-700">Favoritos</a>
         {% endif %}
+                {% if user.is_authenticated %}
+            <a href="/movies/my-reviews/" class="inline-flex items-center border-b-2 
+                        {% if request.path == '/collections/' %}
+                        border-sky-600 
+                        {% else %} 
+                        border-transparent
+                        {% endif %}
+
+                        px-1
+                        pt-1 text-sm font-medium text-gray-500 hover:border-gray-300
+                        hover:text-gray-700"> Mis reseñas
+            </a>
+        {% endif %}
+
+            
+
         <a href="/movies/all/" class="inline-flex items-center border-b-2 
     {% if request.path == '/all/' %}
     border-sky-600 
@@ -87,3 +103,4 @@
   </div>
 
 </nav>
+

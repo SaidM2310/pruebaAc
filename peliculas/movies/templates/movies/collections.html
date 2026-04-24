@@ -2,15 +2,23 @@
 
 {% block content %}
 
-<div class="p-6">
-    <h1 class="text-2xl text-white mb-4">My Collection</h1>
+<div class="p-6 text-white">
+    <h1 class="text-2xl mb-6">Mis Favoritos</h1>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="flex flex-wrap gap-4">
         {% for item in items %}
-            <div>
-                <img src="{{ item.movie.image.url }}" class="rounded">
-                <h3 class="text-blue-400">{{ item.movie.title }}</h3>
+            <div class="w-40">
+                <a href="/movies/{{ item.movie.id }}/">
+                    <img src="https://image.tmdb.org/t/p/w300{{ item.movie.poster_path }}"
+                         class="rounded-lg">
+
+                    <p class="text-sky-400 mt-2">
+                        {{ item.movie.title }}
+                    </p>
+                </a>
             </div>
+        {% empty %}
+            <p>No tienes películas en favoritos.</p>
         {% endfor %}
     </div>
 </div>
