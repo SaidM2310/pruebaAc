@@ -150,3 +150,874 @@
 2026-04-23 06:08:52.955 UTC [2770] LOG:  database system is ready to accept connections
 2026-04-23 06:13:52.960 UTC [2771] LOG:  checkpoint starting: time
 2026-04-23 06:13:52.980 UTC [2771] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.002 s, total=0.020 s; sync files=2, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2026-04-23 06:40:21.878 UTC [2770] LOG:  received SIGHUP, reloading configuration files
+2026-04-23 06:40:21.910 UTC [2770] LOG:  received smart shutdown request
+2026-04-23 06:40:21.923 UTC [2770] LOG:  background worker "logical replication launcher" (PID 2776) exited with exit code 1
+2026-04-23 06:40:21.936 UTC [2771] LOG:  shutting down
+2026-04-23 06:40:21.946 UTC [2771] LOG:  checkpoint starting: shutdown immediate
+2026-04-23 06:40:21.985 UTC [2771] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.049 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB
+2026-04-23 06:40:22.010 UTC [2770] LOG:  database system is shut down
+2026-04-23 14:57:07.721 UTC [1949] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-23 14:57:07.723 UTC [1949] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-23 14:57:07.729 UTC [1949] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-23 14:57:07.742 UTC [1952] LOG:  database system was shut down at 2026-04-23 06:40:21 UTC
+2026-04-23 14:57:07.764 UTC [1949] LOG:  database system is ready to accept connections
+2026-04-23 15:02:07.842 UTC [1950] LOG:  checkpoint starting: time
+2026-04-23 15:02:07.860 UTC [1950] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.002 s, total=0.018 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2026-04-23 17:07:09.733 UTC [1950] LOG:  checkpoint starting: time
+2026-04-23 17:07:12.060 UTC [1950] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.312 s, sync=0.003 s, total=2.327 s; sync files=24, longest=0.002 s, average=0.001 s; distance=45 kB, estimate=45 kB
+2026-04-23 17:12:09.160 UTC [1950] LOG:  checkpoint starting: time
+2026-04-23 17:12:12.489 UTC [1950] LOG:  checkpoint complete: wrote 34 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.315 s, sync=0.003 s, total=3.329 s; sync files=30, longest=0.002 s, average=0.001 s; distance=153 kB, estimate=153 kB
+2026-04-23 17:17:09.572 UTC [1950] LOG:  checkpoint starting: time
+2026-04-23 17:17:12.999 UTC [1950] LOG:  checkpoint complete: wrote 35 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.414 s, sync=0.003 s, total=3.428 s; sync files=29, longest=0.002 s, average=0.001 s; distance=135 kB, estimate=151 kB
+2026-04-23 17:37:10.266 UTC [1950] LOG:  checkpoint starting: time
+2026-04-23 17:37:10.981 UTC [1950] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.703 s, sync=0.004 s, total=0.716 s; sync files=5, longest=0.004 s, average=0.001 s; distance=6 kB, estimate=137 kB
+2026-04-23 17:47:11.141 UTC [1950] LOG:  checkpoint starting: time
+2026-04-23 17:47:12.058 UTC [1950] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.905 s, sync=0.003 s, total=0.917 s; sync files=10, longest=0.002 s, average=0.001 s; distance=4 kB, estimate=123 kB
+2026-04-23 17:52:11.143 UTC [1950] LOG:  checkpoint starting: time
+2026-04-23 17:52:12.361 UTC [1950] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.206 s, sync=0.004 s, total=1.219 s; sync files=10, longest=0.003 s, average=0.001 s; distance=10 kB, estimate=112 kB
+2026-04-23 18:23:11.651 UTC [10115] ERROR:  column "review" of relation "movies_movielike" does not exist
+2026-04-23 18:23:11.651 UTC [10115] STATEMENT:  ALTER TABLE "movies_movielike" DROP COLUMN "review" CASCADE
+2026-04-23 18:27:11.751 UTC [1950] LOG:  checkpoint starting: time
+2026-04-23 18:27:13.874 UTC [1950] LOG:  checkpoint complete: wrote 22 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.112 s, sync=0.003 s, total=2.124 s; sync files=22, longest=0.002 s, average=0.001 s; distance=107 kB, estimate=112 kB
+2026-04-23 18:33:22.509 UTC [10802] ERROR:  null value in column "like" of relation "movies_movielike" violates not-null constraint
+2026-04-23 18:33:22.509 UTC [10802] DETAIL:  Failing row contains (1, null, 2, 2).
+2026-04-23 18:33:22.509 UTC [10802] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id") VALUES (2, 2) RETURNING "movies_movielike"."id"
+2026-04-23 18:37:11.969 UTC [1950] LOG:  checkpoint starting: time
+2026-04-23 18:37:12.684 UTC [1950] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.704 s, sync=0.004 s, total=0.716 s; sync files=8, longest=0.003 s, average=0.001 s; distance=0 kB, estimate=100 kB
+2026-04-23 18:39:26.701 UTC [11238] ERROR:  null value in column "like" of relation "movies_movielike" violates not-null constraint
+2026-04-23 18:39:26.701 UTC [11238] DETAIL:  Failing row contains (2, null, 2, 2).
+2026-04-23 18:39:26.701 UTC [11238] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id") VALUES (2, 2) RETURNING "movies_movielike"."id"
+2026-04-23 18:42:11.785 UTC [1950] LOG:  checkpoint starting: time
+2026-04-23 18:42:11.899 UTC [1950] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.003 s, total=0.115 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=90 kB
+2026-04-23 18:44:57.185 UTC [11769] ERROR:  null value in column "like" of relation "movies_movielike" violates not-null constraint
+2026-04-23 18:44:57.185 UTC [11769] DETAIL:  Failing row contains (3, null, 2, 2).
+2026-04-23 18:44:57.185 UTC [11769] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id") VALUES (2, 2) RETURNING "movies_movielike"."id"
+2026-04-23 18:45:08.528 UTC [11804] ERROR:  null value in column "like" of relation "movies_movielike" violates not-null constraint
+2026-04-23 18:45:08.528 UTC [11804] DETAIL:  Failing row contains (4, null, 2, 2).
+2026-04-23 18:45:08.528 UTC [11804] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id") VALUES (2, 2) RETURNING "movies_movielike"."id"
+2026-04-23 18:47:11.944 UTC [1950] LOG:  checkpoint starting: time
+2026-04-23 18:47:12.061 UTC [1950] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.004 s, total=0.117 s; sync files=2, longest=0.003 s, average=0.002 s; distance=0 kB, estimate=81 kB
+2026-04-23 18:49:13.168 UTC [12041] ERROR:  null value in column "like" of relation "movies_movielike" violates not-null constraint
+2026-04-23 18:49:13.168 UTC [12041] DETAIL:  Failing row contains (5, null, 2, 2).
+2026-04-23 18:49:13.168 UTC [12041] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id") VALUES (2, 2) RETURNING "movies_movielike"."id"
+2026-04-23 18:51:23.304 UTC [12225] ERROR:  null value in column "like" of relation "movies_movielike" violates not-null constraint
+2026-04-23 18:51:23.304 UTC [12225] DETAIL:  Failing row contains (6, null, 2, 2).
+2026-04-23 18:51:23.304 UTC [12225] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id") VALUES (2, 2) RETURNING "movies_movielike"."id"
+2026-04-23 18:51:27.733 UTC [12238] ERROR:  null value in column "like" of relation "movies_movielike" violates not-null constraint
+2026-04-23 18:51:27.733 UTC [12238] DETAIL:  Failing row contains (7, null, 2, 2).
+2026-04-23 18:51:27.733 UTC [12238] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id") VALUES (2, 2) RETURNING "movies_movielike"."id"
+2026-04-23 18:52:11.148 UTC [1950] LOG:  checkpoint starting: time
+2026-04-23 18:52:11.264 UTC [1950] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.004 s, total=0.117 s; sync files=2, longest=0.003 s, average=0.002 s; distance=0 kB, estimate=73 kB
+2026-04-23 18:53:13.243 UTC [1949] LOG:  received SIGHUP, reloading configuration files
+2026-04-23 18:53:13.306 UTC [1949] LOG:  received smart shutdown request
+2026-04-23 18:53:13.337 UTC [1949] LOG:  background worker "logical replication launcher" (PID 1955) exited with exit code 1
+2026-04-23 18:53:13.348 UTC [1950] LOG:  shutting down
+2026-04-23 18:53:13.354 UTC [1950] LOG:  checkpoint starting: shutdown immediate
+2026-04-23 18:53:13.400 UTC [1950] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.052 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=66 kB
+2026-04-23 18:53:13.429 UTC [1949] LOG:  database system is shut down
+2026-04-23 19:04:53.283 UTC [2140] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-23 19:04:53.287 UTC [2140] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-23 19:04:53.292 UTC [2140] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-23 19:04:53.302 UTC [2143] LOG:  database system was shut down at 2026-04-23 18:53:13 UTC
+2026-04-23 19:04:53.316 UTC [2140] LOG:  database system is ready to accept connections
+2026-04-23 19:05:58.279 UTC [2695] ERROR:  column "review" of relation "movies_movielike" does not exist
+2026-04-23 19:05:58.279 UTC [2695] STATEMENT:  ALTER TABLE "movies_movielike" DROP COLUMN "review" CASCADE
+2026-04-23 19:09:53.395 UTC [2141] LOG:  checkpoint starting: time
+2026-04-23 19:09:55.420 UTC [2141] LOG:  checkpoint complete: wrote 23 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.011 s, sync=0.004 s, total=2.025 s; sync files=22, longest=0.002 s, average=0.001 s; distance=109 kB, estimate=109 kB
+2026-04-23 19:12:11.950 UTC [3432] ERROR:  null value in column "like" of relation "movies_movielike" violates not-null constraint
+2026-04-23 19:12:11.950 UTC [3432] DETAIL:  Failing row contains (8, null, 2, 2).
+2026-04-23 19:12:11.950 UTC [3432] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id") VALUES (2, 2) RETURNING "movies_movielike"."id"
+2026-04-23 19:14:53.463 UTC [2141] LOG:  checkpoint starting: time
+2026-04-23 19:14:53.979 UTC [2141] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.504 s, sync=0.004 s, total=0.516 s; sync files=6, longest=0.003 s, average=0.001 s; distance=0 kB, estimate=98 kB
+2026-04-23 19:21:53.589 UTC [4037] ERROR:  column "like" is of type smallint but expression is of type boolean at character 78
+2026-04-23 19:21:53.589 UTC [4037] HINT:  You will need to rewrite or cast the expression.
+2026-04-23 19:21:53.589 UTC [4037] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id", "like") VALUES (2, 2, true) RETURNING "movies_movielike"."id"
+2026-04-23 19:26:43.784 UTC [4405] ERROR:  column "like" is of type smallint but expression is of type boolean at character 78
+2026-04-23 19:26:43.784 UTC [4405] HINT:  You will need to rewrite or cast the expression.
+2026-04-23 19:26:43.784 UTC [4405] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id", "like") VALUES (2, 2, true) RETURNING "movies_movielike"."id"
+2026-04-23 19:32:26.438 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.438 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.438 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.438 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.439 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.439 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.439 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.439 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.440 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.440 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.440 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.440 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.441 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.441 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.441 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.441 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.442 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.442 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.442 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.442 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.443 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.443 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.443 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.443 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.444 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.444 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.444 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.444 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.445 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.445 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.445 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.445 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.446 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.446 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.446 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.446 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.447 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.447 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.447 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.447 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.448 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.448 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.448 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.448 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.449 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.449 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.449 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.449 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.450 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.450 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.450 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.450 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.451 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.451 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.451 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.451 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.452 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.452 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.452 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.452 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.453 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.453 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.453 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.453 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.453 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.453 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.454 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.454 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.455 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.455 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.455 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.455 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.456 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.456 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.456 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.456 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.457 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.457 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.457 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.457 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.458 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.458 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.458 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.458 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.459 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.459 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.459 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.459 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.460 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.460 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.460 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.460 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.461 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.461 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.461 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.461 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.462 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.462 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.462 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.462 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.463 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.463 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.463 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.463 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.464 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.464 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.464 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.464 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.465 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.465 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.466 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.466 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.466 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.466 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.466 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.466 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.467 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.467 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.467 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.467 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.468 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.468 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.468 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.468 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.469 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.469 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.469 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.469 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.470 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.470 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.470 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.470 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.471 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.471 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.471 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.471 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.472 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.472 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.472 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.472 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.474 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.474 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.474 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.474 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.475 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.475 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.475 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.475 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.476 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.476 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.476 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.476 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.477 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.477 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.477 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.477 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.478 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.478 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.478 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.478 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.479 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.479 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.479 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.479 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.480 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.480 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.480 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.480 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.481 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.481 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.481 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.481 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.481 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.481 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.482 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.482 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.483 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.483 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.483 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.483 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.484 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.484 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.484 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.484 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.485 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.485 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.485 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.485 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.486 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.486 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.486 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.486 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.486 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.486 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.487 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.487 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.487 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.487 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.488 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.488 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.488 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.488 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.489 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.489 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.489 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.489 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.490 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.490 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.491 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.491 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.491 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.491 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.491 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.491 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.492 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.492 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.492 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.492 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.493 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.493 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.494 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.494 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.494 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.494 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.494 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.494 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.495 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.495 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.495 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.495 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.496 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.496 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.496 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.496 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.497 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.497 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.497 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.497 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.498 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.498 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:26.498 UTC [4849] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:26.498 UTC [4849] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:32:30.502 UTC [4864] ERROR:  column "like" is of type smallint but expression is of type boolean at character 78
+2026-04-23 19:32:30.502 UTC [4864] HINT:  You will need to rewrite or cast the expression.
+2026-04-23 19:32:30.502 UTC [4864] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id", "like") VALUES (2, 2, true) RETURNING "movies_movielike"."id"
+2026-04-23 19:32:34.921 UTC [4878] ERROR:  column "like" is of type smallint but expression is of type boolean at character 78
+2026-04-23 19:32:34.921 UTC [4878] HINT:  You will need to rewrite or cast the expression.
+2026-04-23 19:32:34.921 UTC [4878] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id", "like") VALUES (2, 2, true) RETURNING "movies_movielike"."id"
+2026-04-23 19:32:50.325 UTC [4972] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:50.325 UTC [4972] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2) LIMIT 21
+2026-04-23 19:32:50.326 UTC [4972] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:50.326 UTC [4972] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2) LIMIT 21
+2026-04-23 19:32:50.326 UTC [4972] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:50.326 UTC [4972] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2) LIMIT 21
+2026-04-23 19:32:50.327 UTC [4972] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:32:50.327 UTC [4972] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2) LIMIT 21
+2026-04-23 19:33:11.452 UTC [5077] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:11.452 UTC [5077] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:11.453 UTC [5077] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:11.453 UTC [5077] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:11.454 UTC [5077] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:11.454 UTC [5077] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:11.454 UTC [5077] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:11.454 UTC [5077] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:11.455 UTC [5077] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:11.455 UTC [5077] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:11.456 UTC [5077] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:11.456 UTC [5077] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:11.457 UTC [5077] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:11.457 UTC [5077] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:11.457 UTC [5077] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:11.457 UTC [5077] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:11.458 UTC [5077] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:11.458 UTC [5077] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:11.459 UTC [5077] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:11.459 UTC [5077] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:11.459 UTC [5077] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:11.459 UTC [5077] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:20.078 UTC [5127] ERROR:  column "like" is of type smallint but expression is of type boolean at character 78
+2026-04-23 19:33:20.078 UTC [5127] HINT:  You will need to rewrite or cast the expression.
+2026-04-23 19:33:20.078 UTC [5127] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id", "like") VALUES (2, 2, true) RETURNING "movies_movielike"."id"
+2026-04-23 19:33:31.608 UTC [5178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:31.608 UTC [5178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:31.609 UTC [5178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:31.609 UTC [5178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:31.609 UTC [5178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:31.609 UTC [5178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:31.610 UTC [5178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:31.610 UTC [5178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:31.611 UTC [5178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:31.611 UTC [5178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:31.612 UTC [5178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:31.612 UTC [5178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:31.612 UTC [5178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:31.612 UTC [5178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:31.613 UTC [5178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:31.613 UTC [5178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:31.614 UTC [5178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:31.614 UTC [5178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:31.615 UTC [5178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:31.615 UTC [5178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:31.615 UTC [5178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:31.615 UTC [5178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:35.183 UTC [5195] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:35.183 UTC [5195] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:35.184 UTC [5195] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:35.184 UTC [5195] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:35.184 UTC [5195] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:35.184 UTC [5195] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:35.185 UTC [5195] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:35.185 UTC [5195] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:35.186 UTC [5195] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:35.186 UTC [5195] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:35.186 UTC [5195] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:35.186 UTC [5195] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:35.187 UTC [5195] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:35.187 UTC [5195] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:35.188 UTC [5195] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:35.188 UTC [5195] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:35.189 UTC [5195] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:35.189 UTC [5195] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:35.189 UTC [5195] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:35.189 UTC [5195] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:33:35.190 UTC [5195] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:33:35.190 UTC [5195] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:34:06.365 UTC [5272] ERROR:  column "like" is of type smallint but expression is of type boolean at character 78
+2026-04-23 19:34:06.365 UTC [5272] HINT:  You will need to rewrite or cast the expression.
+2026-04-23 19:34:06.365 UTC [5272] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id", "like") VALUES (2, 2, true) RETURNING "movies_movielike"."id"
+2026-04-23 19:40:15.062 UTC [5595] ERROR:  column "like" is of type smallint but expression is of type boolean at character 78
+2026-04-23 19:40:15.062 UTC [5595] HINT:  You will need to rewrite or cast the expression.
+2026-04-23 19:40:15.062 UTC [5595] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id", "like") VALUES (2, 5, true) RETURNING "movies_movielike"."id"
+2026-04-23 19:40:18.323 UTC [5611] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:18.323 UTC [5611] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:18.324 UTC [5611] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:18.324 UTC [5611] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:18.326 UTC [5611] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:18.326 UTC [5611] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:18.327 UTC [5611] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:18.327 UTC [5611] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:18.328 UTC [5611] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:18.328 UTC [5611] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:18.329 UTC [5611] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:18.329 UTC [5611] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:18.330 UTC [5611] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:18.330 UTC [5611] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:18.330 UTC [5611] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:18.330 UTC [5611] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:18.331 UTC [5611] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:18.331 UTC [5611] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:18.332 UTC [5611] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:18.332 UTC [5611] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:18.333 UTC [5611] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:18.333 UTC [5611] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:22.854 UTC [5642] ERROR:  column "like" is of type smallint but expression is of type boolean at character 78
+2026-04-23 19:40:22.854 UTC [5642] HINT:  You will need to rewrite or cast the expression.
+2026-04-23 19:40:22.854 UTC [5642] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id", "like") VALUES (2, 7, true) RETURNING "movies_movielike"."id"
+2026-04-23 19:40:31.007 UTC [5681] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:31.007 UTC [5681] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:31.008 UTC [5681] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:31.008 UTC [5681] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:31.010 UTC [5681] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:31.010 UTC [5681] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:31.010 UTC [5681] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:31.010 UTC [5681] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:31.011 UTC [5681] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:31.011 UTC [5681] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:31.012 UTC [5681] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:31.012 UTC [5681] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:31.013 UTC [5681] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:31.013 UTC [5681] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:31.013 UTC [5681] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:31.013 UTC [5681] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:31.014 UTC [5681] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:31.014 UTC [5681] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:31.015 UTC [5681] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:31.015 UTC [5681] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:40:31.015 UTC [5681] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 19:40:31.015 UTC [5681] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 19:41:01.055 UTC [2140] LOG:  received SIGHUP, reloading configuration files
+2026-04-23 19:41:01.095 UTC [2140] LOG:  received smart shutdown request
+2026-04-23 19:41:01.108 UTC [2140] LOG:  background worker "logical replication launcher" (PID 2146) exited with exit code 1
+2026-04-23 19:41:01.111 UTC [2141] LOG:  shutting down
+2026-04-23 19:41:01.118 UTC [2141] LOG:  checkpoint starting: shutdown immediate
+2026-04-23 19:41:01.170 UTC [2141] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.010 s, total=0.059 s; sync files=1, longest=0.010 s, average=0.010 s; distance=0 kB, estimate=88 kB
+2026-04-23 19:41:01.195 UTC [2140] LOG:  database system is shut down
+2026-04-23 21:04:34.144 UTC [2059] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-23 21:04:34.148 UTC [2059] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-23 21:04:34.152 UTC [2059] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-23 21:04:34.163 UTC [2062] LOG:  database system was shut down at 2026-04-23 19:41:01 UTC
+2026-04-23 21:04:34.177 UTC [2059] LOG:  database system is ready to accept connections
+2026-04-23 21:05:09.985 UTC [2341] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:09.985 UTC [2341] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 21:05:09.986 UTC [2341] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:09.986 UTC [2341] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 21:05:09.987 UTC [2341] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:09.987 UTC [2341] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 21:05:09.987 UTC [2341] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:09.987 UTC [2341] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 21:05:09.988 UTC [2341] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:09.988 UTC [2341] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 21:05:09.989 UTC [2341] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:09.989 UTC [2341] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 21:05:09.989 UTC [2341] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:09.989 UTC [2341] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 21:05:09.990 UTC [2341] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:09.990 UTC [2341] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 21:05:09.991 UTC [2341] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:09.991 UTC [2341] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 21:05:09.992 UTC [2341] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:09.992 UTC [2341] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 21:05:09.992 UTC [2341] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:09.992 UTC [2341] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 2)
+2026-04-23 21:05:51.570 UTC [2503] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:51.570 UTC [2503] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:05:51.570 UTC [2503] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:51.570 UTC [2503] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:05:51.571 UTC [2503] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:51.571 UTC [2503] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:05:51.572 UTC [2503] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:51.572 UTC [2503] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:05:51.572 UTC [2503] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:51.572 UTC [2503] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:05:51.573 UTC [2503] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:51.573 UTC [2503] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:05:51.574 UTC [2503] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:51.574 UTC [2503] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:05:51.575 UTC [2503] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:51.575 UTC [2503] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:05:51.576 UTC [2503] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:51.576 UTC [2503] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:05:51.576 UTC [2503] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:51.576 UTC [2503] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:05:51.577 UTC [2503] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:05:51.577 UTC [2503] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:05:59.835 UTC [2551] ERROR:  column "like" is of type smallint but expression is of type boolean at character 78
+2026-04-23 21:05:59.835 UTC [2551] HINT:  You will need to rewrite or cast the expression.
+2026-04-23 21:05:59.835 UTC [2551] STATEMENT:  INSERT INTO "movies_movielike" ("user_id", "movie_id", "like") VALUES (3, 2, true) RETURNING "movies_movielike"."id"
+2026-04-23 21:07:15.276 UTC [2739] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:07:15.276 UTC [2739] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:07:15.277 UTC [2739] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:07:15.277 UTC [2739] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:07:15.278 UTC [2739] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:07:15.278 UTC [2739] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:07:15.278 UTC [2739] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:07:15.278 UTC [2739] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:07:15.279 UTC [2739] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:07:15.279 UTC [2739] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:07:15.280 UTC [2739] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:07:15.280 UTC [2739] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:07:15.281 UTC [2739] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:07:15.281 UTC [2739] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:07:15.281 UTC [2739] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:07:15.281 UTC [2739] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:07:15.282 UTC [2739] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:07:15.282 UTC [2739] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:07:15.283 UTC [2739] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:07:15.283 UTC [2739] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:07:15.284 UTC [2739] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:07:15.284 UTC [2739] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 3)
+2026-04-23 21:09:34.193 UTC [2060] LOG:  checkpoint starting: time
+2026-04-23 21:09:35.717 UTC [2060] LOG:  checkpoint complete: wrote 18 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.510 s, sync=0.004 s, total=1.525 s; sync files=17, longest=0.003 s, average=0.001 s; distance=12 kB, estimate=12 kB
+2026-04-23 21:17:09.997 UTC [3178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:17:09.997 UTC [3178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:17:09.998 UTC [3178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:17:09.998 UTC [3178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:17:09.999 UTC [3178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:17:09.999 UTC [3178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:17:10.000 UTC [3178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:17:10.000 UTC [3178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:17:10.001 UTC [3178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:17:10.001 UTC [3178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:17:10.001 UTC [3178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:17:10.001 UTC [3178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:17:10.002 UTC [3178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:17:10.002 UTC [3178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:17:10.003 UTC [3178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:17:10.003 UTC [3178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:17:10.004 UTC [3178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:17:10.004 UTC [3178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:17:10.004 UTC [3178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:17:10.004 UTC [3178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:17:10.005 UTC [3178] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:17:10.005 UTC [3178] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:19:34.817 UTC [2060] LOG:  checkpoint starting: time
+2026-04-23 21:19:35.737 UTC [2060] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.906 s, sync=0.003 s, total=0.920 s; sync files=10, longest=0.002 s, average=0.001 s; distance=6 kB, estimate=12 kB
+2026-04-23 21:29:50.986 UTC [3394] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:50.986 UTC [3394] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:50.987 UTC [3394] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:50.987 UTC [3394] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:50.988 UTC [3394] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:50.988 UTC [3394] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:50.989 UTC [3394] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:50.989 UTC [3394] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:50.989 UTC [3394] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:50.989 UTC [3394] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:50.990 UTC [3394] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:50.990 UTC [3394] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:50.991 UTC [3394] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:50.991 UTC [3394] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:50.991 UTC [3394] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:50.991 UTC [3394] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:50.992 UTC [3394] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:50.992 UTC [3394] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:50.993 UTC [3394] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:50.993 UTC [3394] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:50.994 UTC [3394] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:50.994 UTC [3394] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:55.634 UTC [3420] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:55.634 UTC [3420] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:55.635 UTC [3420] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:55.635 UTC [3420] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:55.637 UTC [3420] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:55.637 UTC [3420] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:55.638 UTC [3420] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:55.638 UTC [3420] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:55.643 UTC [3420] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:55.643 UTC [3420] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:55.644 UTC [3420] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:55.644 UTC [3420] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:55.645 UTC [3420] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:55.645 UTC [3420] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:55.655 UTC [3420] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:55.655 UTC [3420] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:55.656 UTC [3420] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:55.656 UTC [3420] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:55.656 UTC [3420] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:55.656 UTC [3420] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:55.657 UTC [3420] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:55.657 UTC [3420] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:58.868 UTC [3446] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:58.868 UTC [3446] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:58.869 UTC [3446] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:58.869 UTC [3446] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:58.870 UTC [3446] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:58.870 UTC [3446] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:58.871 UTC [3446] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:58.871 UTC [3446] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:58.872 UTC [3446] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:58.872 UTC [3446] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:58.872 UTC [3446] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:58.872 UTC [3446] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:58.873 UTC [3446] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:58.873 UTC [3446] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:58.874 UTC [3446] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:58.874 UTC [3446] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:58.875 UTC [3446] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:58.875 UTC [3446] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:58.875 UTC [3446] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:58.875 UTC [3446] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:29:58.876 UTC [3446] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:29:58.876 UTC [3446] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:30:05.087 UTC [3471] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:30:05.087 UTC [3471] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:30:05.088 UTC [3471] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:30:05.088 UTC [3471] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:30:05.089 UTC [3471] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:30:05.089 UTC [3471] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:30:05.091 UTC [3471] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:30:05.091 UTC [3471] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:30:05.092 UTC [3471] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:30:05.092 UTC [3471] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:30:05.093 UTC [3471] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:30:05.093 UTC [3471] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:30:05.093 UTC [3471] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:30:05.093 UTC [3471] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:30:05.094 UTC [3471] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:30:05.094 UTC [3471] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:30:05.095 UTC [3471] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:30:05.095 UTC [3471] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:30:05.096 UTC [3471] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:30:05.096 UTC [3471] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:30:05.096 UTC [3471] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-23 21:30:05.096 UTC [3471] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-23 21:48:42.319 UTC [2059] LOG:  received SIGHUP, reloading configuration files
+2026-04-23 21:48:42.370 UTC [2059] LOG:  received smart shutdown request
+2026-04-23 21:48:42.375 UTC [2059] LOG:  background worker "logical replication launcher" (PID 2065) exited with exit code 1
+2026-04-23 21:48:42.387 UTC [2060] LOG:  shutting down
+2026-04-23 21:48:42.402 UTC [2060] LOG:  checkpoint starting: shutdown immediate
+2026-04-23 21:48:42.445 UTC [2060] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.059 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=11 kB
+2026-04-23 21:48:42.466 UTC [2059] LOG:  database system is shut down
+2026-04-24 05:36:16.445 UTC [2119] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-24 05:36:16.448 UTC [2119] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-24 05:36:16.454 UTC [2119] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-24 05:36:16.464 UTC [2122] LOG:  database system was shut down at 2026-04-23 21:48:42 UTC
+2026-04-24 05:36:16.483 UTC [2119] LOG:  database system is ready to accept connections
+2026-04-24 05:36:49.212 UTC [2320] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:36:49.212 UTC [2320] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:36:49.213 UTC [2320] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:36:49.213 UTC [2320] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:36:49.213 UTC [2320] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:36:49.213 UTC [2320] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:36:49.214 UTC [2320] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:36:49.214 UTC [2320] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:36:49.215 UTC [2320] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:36:49.215 UTC [2320] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:36:49.215 UTC [2320] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:36:49.215 UTC [2320] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:36:49.216 UTC [2320] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:36:49.216 UTC [2320] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:36:49.217 UTC [2320] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:36:49.217 UTC [2320] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:36:49.217 UTC [2320] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:36:49.217 UTC [2320] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:36:49.218 UTC [2320] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:36:49.218 UTC [2320] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:36:49.219 UTC [2320] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:36:49.219 UTC [2320] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:37:08.324 UTC [2393] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:37:08.324 UTC [2393] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:37:08.325 UTC [2393] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:37:08.325 UTC [2393] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:37:08.326 UTC [2393] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:37:08.326 UTC [2393] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:37:08.326 UTC [2393] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:37:08.326 UTC [2393] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:37:08.327 UTC [2393] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:37:08.327 UTC [2393] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:37:08.328 UTC [2393] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:37:08.328 UTC [2393] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:37:08.329 UTC [2393] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:37:08.329 UTC [2393] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:37:08.329 UTC [2393] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:37:08.329 UTC [2393] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:37:08.330 UTC [2393] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:37:08.330 UTC [2393] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:37:08.331 UTC [2393] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:37:08.331 UTC [2393] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:37:08.332 UTC [2393] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:37:08.332 UTC [2393] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:37:55.045 UTC [2552] ERROR:  column "review" of relation "movies_movielike" does not exist
+2026-04-24 05:37:55.045 UTC [2552] STATEMENT:  ALTER TABLE "movies_movielike" DROP COLUMN "review" CASCADE
+2026-04-24 05:41:02.717 UTC [2889] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:41:02.717 UTC [2889] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:41:02.718 UTC [2889] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:41:02.718 UTC [2889] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:41:02.719 UTC [2889] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:41:02.719 UTC [2889] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:41:02.720 UTC [2889] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:41:02.720 UTC [2889] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:41:02.721 UTC [2889] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:41:02.721 UTC [2889] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:41:02.721 UTC [2889] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:41:02.721 UTC [2889] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:41:02.722 UTC [2889] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:41:02.722 UTC [2889] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:41:02.723 UTC [2889] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:41:02.723 UTC [2889] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:41:02.723 UTC [2889] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:41:02.723 UTC [2889] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:41:02.724 UTC [2889] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:41:02.724 UTC [2889] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:41:02.725 UTC [2889] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:41:02.725 UTC [2889] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:41:08.853 UTC [2922] ERROR:  relation "movies_collection" does not exist at character 22
+2026-04-24 05:41:08.853 UTC [2922] STATEMENT:  SELECT 1 AS "a" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 1
+2026-04-24 05:41:08.867 UTC [2922] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 05:41:08.867 UTC [2922] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 21
+2026-04-24 05:41:16.530 UTC [2120] LOG:  checkpoint starting: time
+2026-04-24 05:41:18.557 UTC [2120] LOG:  checkpoint complete: wrote 23 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.012 s, sync=0.004 s, total=2.027 s; sync files=22, longest=0.003 s, average=0.001 s; distance=109 kB, estimate=109 kB
+2026-04-24 05:43:58.290 UTC [3351] ERROR:  relation "movies_collection" does not exist at character 22
+2026-04-24 05:43:58.290 UTC [3351] STATEMENT:  SELECT 1 AS "a" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 1
+2026-04-24 05:43:58.302 UTC [3351] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 05:43:58.302 UTC [3351] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 21
+2026-04-24 05:45:51.778 UTC [3551] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:51.778 UTC [3551] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:51.779 UTC [3551] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:51.779 UTC [3551] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:51.780 UTC [3551] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:51.780 UTC [3551] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:51.780 UTC [3551] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:51.780 UTC [3551] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:51.781 UTC [3551] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:51.781 UTC [3551] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:51.782 UTC [3551] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:51.782 UTC [3551] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:51.782 UTC [3551] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:51.782 UTC [3551] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:51.783 UTC [3551] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:51.783 UTC [3551] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:51.784 UTC [3551] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:51.784 UTC [3551] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:51.785 UTC [3551] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:51.785 UTC [3551] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:51.785 UTC [3551] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:51.785 UTC [3551] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:53.240 UTC [3564] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:53.240 UTC [3564] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:53.241 UTC [3564] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:53.241 UTC [3564] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:53.242 UTC [3564] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:53.242 UTC [3564] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:53.243 UTC [3564] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:53.243 UTC [3564] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:53.243 UTC [3564] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:53.243 UTC [3564] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:53.244 UTC [3564] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:53.244 UTC [3564] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:53.245 UTC [3564] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:53.245 UTC [3564] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:53.245 UTC [3564] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:53.245 UTC [3564] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:53.246 UTC [3564] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:53.246 UTC [3564] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:53.247 UTC [3564] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:53.247 UTC [3564] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:53.247 UTC [3564] ERROR:  argument of AND must be type boolean, not type smallint at character 83
+2026-04-24 05:45:53.247 UTC [3564] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 05:45:57.301 UTC [3577] ERROR:  relation "movies_collection" does not exist at character 22
+2026-04-24 05:45:57.301 UTC [3577] STATEMENT:  SELECT 1 AS "a" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 1
+2026-04-24 05:45:57.314 UTC [3577] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 05:45:57.314 UTC [3577] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 21
+2026-04-24 05:46:01.845 UTC [3600] ERROR:  relation "movies_collection" does not exist at character 22
+2026-04-24 05:46:01.845 UTC [3600] STATEMENT:  SELECT 1 AS "a" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 1
+2026-04-24 05:46:01.859 UTC [3600] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 05:46:01.859 UTC [3600] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 21
+2026-04-24 05:46:16.887 UTC [3643] ERROR:  relation "movies_collection" does not exist at character 22
+2026-04-24 05:46:16.887 UTC [3643] STATEMENT:  SELECT 1 AS "a" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 1
+2026-04-24 05:46:16.899 UTC [3643] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 05:46:16.899 UTC [3643] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 21
+2026-04-24 05:46:19.858 UTC [3666] ERROR:  relation "movies_collection" does not exist at character 22
+2026-04-24 05:46:19.858 UTC [3666] STATEMENT:  SELECT 1 AS "a" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 1
+2026-04-24 05:46:19.870 UTC [3666] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 05:46:19.870 UTC [3666] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 21
+2026-04-24 05:48:23.520 UTC [3760] ERROR:  relation "movies_collection" does not exist at character 22
+2026-04-24 05:48:23.520 UTC [3760] STATEMENT:  SELECT 1 AS "a" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 1
+2026-04-24 05:48:23.532 UTC [3760] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 05:48:23.532 UTC [3760] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 21
+2026-04-24 05:52:22.537 UTC [4364] ERROR:  column "review" of relation "movies_movielike" does not exist
+2026-04-24 05:52:22.537 UTC [4364] STATEMENT:  ALTER TABLE "movies_movielike" DROP COLUMN "review" CASCADE
+2026-04-24 05:53:42.300 UTC [4462] ERROR:  column "review" of relation "movies_movielike" does not exist
+2026-04-24 05:53:42.300 UTC [4462] STATEMENT:  ALTER TABLE "movies_movielike" DROP COLUMN "review" CASCADE
+2026-04-24 05:53:47.814 UTC [4496] ERROR:  column "review" of relation "movies_movielike" does not exist
+2026-04-24 05:53:47.814 UTC [4496] STATEMENT:  ALTER TABLE "movies_movielike" DROP COLUMN "review" CASCADE
+2026-04-24 05:56:16.808 UTC [2120] LOG:  checkpoint starting: time
+2026-04-24 05:56:19.430 UTC [2120] LOG:  checkpoint complete: wrote 27 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.611 s, sync=0.003 s, total=2.623 s; sync files=24, longest=0.002 s, average=0.001 s; distance=120 kB, estimate=120 kB
+2026-04-24 05:58:33.698 UTC [5312] ERROR:  table "movies_collection" does not exist
+2026-04-24 05:58:33.698 UTC [5312] STATEMENT:  DROP TABLE movies_collection;
+2026-04-24 05:58:33.720 UTC [5312] ERROR:  cannot drop table movies_movie because other objects depend on it
+2026-04-24 05:58:33.720 UTC [5312] DETAIL:  constraint movies_movie_genres_movie_id_ff5e55a1_fk_movies_movie_id on table movies_movie_genres depends on table movies_movie
+	constraint movies_moviecredit_movie_id_30159eab_fk_movies_movie_id on table movies_moviecredit depends on table movies_movie
+	constraint movies_moviereview_movie_id_33a23055_fk_movies_movie_id on table movies_moviereview depends on table movies_movie
+2026-04-24 05:58:33.720 UTC [5312] HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2026-04-24 05:58:33.720 UTC [5312] STATEMENT:  DROP TABLE movies_movie;
+2026-04-24 05:58:55.742 UTC [5312] ERROR:  table "movies_collection" does not exist
+2026-04-24 05:58:55.742 UTC [5312] STATEMENT:  DROP TABLE movies_collection;
+2026-04-24 05:59:29.237 UTC [5312] ERROR:  cannot drop table movies_movie because other objects depend on it
+2026-04-24 05:59:29.237 UTC [5312] DETAIL:  constraint movies_movie_genres_movie_id_ff5e55a1_fk_movies_movie_id on table movies_movie_genres depends on table movies_movie
+	constraint movies_moviecredit_movie_id_30159eab_fk_movies_movie_id on table movies_moviecredit depends on table movies_movie
+	constraint movies_moviereview_movie_id_33a23055_fk_movies_movie_id on table movies_moviereview depends on table movies_movie
+2026-04-24 05:59:29.237 UTC [5312] HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2026-04-24 05:59:29.237 UTC [5312] STATEMENT:  DROP TABLE IF EXISTS movies_movie;
+2026-04-24 06:01:16.515 UTC [2120] LOG:  checkpoint starting: time
+2026-04-24 06:01:19.442 UTC [2120] LOG:  checkpoint complete: wrote 30 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.914 s, sync=0.004 s, total=2.927 s; sync files=25, longest=0.003 s, average=0.001 s; distance=105 kB, estimate=119 kB
+2026-04-24 06:02:32.281 UTC [6277] ERROR:  relation "movies_movielike" does not exist at character 57
+2026-04-24 06:02:32.281 UTC [6277] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 06:02:32.282 UTC [6277] ERROR:  relation "movies_movielike" does not exist at character 57
+2026-04-24 06:02:32.282 UTC [6277] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 06:02:32.283 UTC [6277] ERROR:  relation "movies_movielike" does not exist at character 57
+2026-04-24 06:02:32.283 UTC [6277] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 06:02:32.283 UTC [6277] ERROR:  relation "movies_movielike" does not exist at character 57
+2026-04-24 06:02:32.283 UTC [6277] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 06:02:32.284 UTC [6277] ERROR:  relation "movies_movielike" does not exist at character 57
+2026-04-24 06:02:32.284 UTC [6277] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 06:02:32.285 UTC [6277] ERROR:  relation "movies_movielike" does not exist at character 57
+2026-04-24 06:02:32.285 UTC [6277] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 06:02:32.285 UTC [6277] ERROR:  relation "movies_movielike" does not exist at character 57
+2026-04-24 06:02:32.285 UTC [6277] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 06:02:32.286 UTC [6277] ERROR:  relation "movies_movielike" does not exist at character 57
+2026-04-24 06:02:32.286 UTC [6277] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 06:02:32.287 UTC [6277] ERROR:  relation "movies_movielike" does not exist at character 57
+2026-04-24 06:02:32.287 UTC [6277] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 06:02:32.287 UTC [6277] ERROR:  relation "movies_movielike" does not exist at character 57
+2026-04-24 06:02:32.287 UTC [6277] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 06:02:32.288 UTC [6277] ERROR:  relation "movies_movielike" does not exist at character 57
+2026-04-24 06:02:32.288 UTC [6277] STATEMENT:  SELECT "movies_movielike"."movie_id" AS "movie_id" FROM "movies_movielike" WHERE ("movies_movielike"."like" AND "movies_movielike"."user_id" = 4)
+2026-04-24 06:02:35.777 UTC [6302] ERROR:  relation "movies_collection" does not exist at character 22
+2026-04-24 06:02:35.777 UTC [6302] STATEMENT:  SELECT 1 AS "a" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 1
+2026-04-24 06:02:35.790 UTC [6302] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 06:02:35.790 UTC [6302] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 21
+2026-04-24 06:02:50.091 UTC [6332] ERROR:  relation "movies_collection" does not exist at character 22
+2026-04-24 06:02:50.091 UTC [6332] STATEMENT:  SELECT 1 AS "a" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 1
+2026-04-24 06:02:50.110 UTC [6332] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 06:02:50.110 UTC [6332] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 2 AND "movies_collection"."user_id" = 4) LIMIT 21
+2026-04-24 06:06:16.507 UTC [2120] LOG:  checkpoint starting: time
+2026-04-24 06:06:16.821 UTC [2120] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.303 s, sync=0.003 s, total=0.315 s; sync files=3, longest=0.003 s, average=0.001 s; distance=6 kB, estimate=107 kB

@@ -1,24 +1,37 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Lista de Objetos</title>
-</head>
-<body>
+{% extends "movies/base.html" %}
 
-    <h1>Lista de Objetos</h1>
+{% block content %}
 
-    {% if objetos %}
-        <ul>
-            {% for obj in objetos %}
-                <li>
-                <b> {{ obj.title }} </b> - {{ obj.overview }}
-                </li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <p>No hay objetos disponibles.</p>
-    {% endif %}
+<div class="px-6 py-8">
 
-</body>
-</html>
+    <h1 class="text-2xl font-bold text-white mb-6">All Movies</h1>
+
+    {% for letter, movies in grouped_movies.items %}
+          <h2 class="text-xl text-sky-400 mt-6 mb-2">{{ letter }}</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {% for movie in movies %}
+            <a href="{% url 'movie_detail' movie.id %}">
+                <div class="hover:scale-105 transition">
+                    
+                    <img
+          class="block h-full w-full rounded-lg object-cover object-center"
+          src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/{{movie.poster_path}}" alt="{{movie.title}}" />
+
+                    <h3 class="text-blue-400 mt-2">
+                        {{ movie.title }}
+                    </h3>
+
+                    <p class="text-gray-400">
+                        {{ movie.release_date }}
+                    </p>
+
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}

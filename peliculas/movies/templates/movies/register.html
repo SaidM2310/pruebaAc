@@ -1,0 +1,28 @@
+{% extends "movies/base.html" %}
+
+{% block content %}
+
+<div class="flex justify-center items-center h-screen">
+    <form method="POST" class="bg-gray-800 p-8 rounded-lg shadow-lg w-80">
+        {% csrf_token %}
+
+        <h2 class="text-white text-xl mb-4">Register</h2>
+
+        {% if error %}
+            <p class="text-red-500">{{ error }}</p>
+        {% endif %}
+
+        <input type="text" name="username" placeholder="Username"
+            class="w-full mb-3 p-2 rounded bg-gray-700 text-white" required>
+
+        <input type="password" name="password" placeholder="Password"
+            class="w-full mb-3 p-2 rounded bg-gray-700 text-white" required>
+
+        <button type="submit"
+            class="w-full bg-blue-500 hover:bg-blue-600 text-white p-2 rounded">
+            Create Account
+        </button>
+    </form>
+</div>
+
+{% endblock %}

@@ -37,7 +37,14 @@
                 <a class="pl-5 text-blue-600 text-sm"   
                  hx-get="/movies/movie_review/add/{{movie.id}}" hx-target="body" hx-swap="beforeend"  href="#">reviews</a> 
                  {% endif %}
-                <a class="pl-5 text-red-600 text-sm" href="#">like</a> 
+                
+                <form method="POST" action="{% url 'add_to_collection' movie.id %}">
+                  {% csrf_token %}
+                <button type="submit" class=" text-white ">
+                ❤️ Like
+                </button>
+                </form>
+                
               </div> 
             
             <h1 class="mt-5 text-gray-600 text-base  pl-5 font-semibold">Overview</h1>
