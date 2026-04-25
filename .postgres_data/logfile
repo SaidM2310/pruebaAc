@@ -1527,3 +1527,149 @@
 2026-04-24 17:57:44.068 UTC [19074] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
 2026-04-24 17:57:44.069 UTC [19074] ERROR:  relation "movies_collection" does not exist at character 101
 2026-04-24 17:57:44.069 UTC [19074] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 18:07:40.980 UTC [2005] LOG:  received SIGHUP, reloading configuration files
+2026-04-24 18:07:41.046 UTC [2005] LOG:  received smart shutdown request
+2026-04-24 18:07:41.074 UTC [2005] LOG:  background worker "logical replication launcher" (PID 2011) exited with exit code 1
+2026-04-24 18:07:41.087 UTC [2006] LOG:  shutting down
+2026-04-24 18:07:41.101 UTC [2006] LOG:  checkpoint starting: shutdown immediate
+2026-04-24 18:07:41.178 UTC [2006] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.013 s, sync=0.013 s, total=0.088 s; sync files=1, longest=0.013 s, average=0.013 s; distance=0 kB, estimate=187 kB
+2026-04-24 18:07:41.217 UTC [2005] LOG:  database system is shut down
+2026-04-24 20:31:59.056 UTC [1427] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-24 20:31:59.057 UTC [1427] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-24 20:31:59.062 UTC [1427] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-24 20:31:59.070 UTC [1430] LOG:  database system was shut down at 2026-04-24 18:07:41 UTC
+2026-04-24 20:31:59.081 UTC [1427] LOG:  database system is ready to accept connections
+2026-04-24 20:33:21.202 UTC [1427] LOG:  received SIGHUP, reloading configuration files
+2026-04-24 20:33:21.237 UTC [1427] LOG:  received smart shutdown request
+2026-04-24 20:33:21.254 UTC [1427] LOG:  background worker "logical replication launcher" (PID 1433) exited with exit code 1
+2026-04-24 20:33:21.271 UTC [1428] LOG:  shutting down
+2026-04-24 20:33:21.280 UTC [1428] LOG:  checkpoint starting: shutdown immediate
+2026-04-24 20:33:21.352 UTC [1428] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.026 s, sync=0.010 s, total=0.082 s; sync files=2, longest=0.009 s, average=0.005 s; distance=0 kB, estimate=0 kB
+2026-04-24 20:33:21.365 UTC [1427] LOG:  database system is shut down
+2026-04-24 20:37:07.881 UTC [1380] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-24 20:37:07.882 UTC [1380] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-24 20:37:07.888 UTC [1380] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-24 20:37:07.896 UTC [1383] LOG:  database system was shut down at 2026-04-24 20:33:21 UTC
+2026-04-24 20:37:07.907 UTC [1380] LOG:  database system is ready to accept connections
+2026-04-24 20:37:52.647 UTC [2076] ERROR:  relation "movies_collection" does not exist at character 22
+2026-04-24 20:37:52.647 UTC [2076] STATEMENT:  SELECT 1 AS "a" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 13 AND "movies_collection"."user_id" = 3) LIMIT 1
+2026-04-24 20:37:52.741 UTC [2076] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:52.741 UTC [2076] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 13 AND "movies_collection"."user_id" = 3) LIMIT 21
+2026-04-24 20:37:54.753 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.753 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3
+2026-04-24 20:37:54.810 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.810 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.813 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.813 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.815 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.815 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.815 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.815 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.818 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.818 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.819 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.819 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.821 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.821 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.823 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.823 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.825 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.825 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.826 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.826 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.827 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.827 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.830 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.830 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.832 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.832 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.833 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.833 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.836 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.836 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.837 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.837 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.837 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.837 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.839 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.839 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.841 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.841 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:37:54.841 UTC [2082] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:37:54.841 UTC [2082] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.077 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.077 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3
+2026-04-24 20:38:00.095 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.095 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.096 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.096 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.096 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.096 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.097 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.097 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.097 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.097 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.098 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.098 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.098 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.098 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.099 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.099 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.099 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.099 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.100 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.100 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.101 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.101 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.101 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.101 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.102 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.102 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.102 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.102 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.103 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.103 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.103 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.103 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.104 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.104 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.104 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.104 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.105 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.105 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:38:00.105 UTC [2106] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:38:00.105 UTC [2106] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE "movies_collection"."user_id" = 3 LIMIT 21
+2026-04-24 20:40:11.900 UTC [2552] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 20:40:11.900 UTC [2552] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" LIMIT 21
+2026-04-24 20:42:07.996 UTC [1381] LOG:  checkpoint starting: time
+2026-04-24 20:42:08.011 UTC [1381] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.002 s, total=0.015 s; sync files=2, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2026-04-24 20:47:07.074 UTC [1381] LOG:  checkpoint starting: time
+2026-04-24 20:47:11.714 UTC [1381] LOG:  checkpoint complete: wrote 47 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.627 s, sync=0.003 s, total=4.640 s; sync files=47, longest=0.002 s, average=0.001 s; distance=183 kB, estimate=183 kB
+2026-04-24 20:52:07.742 UTC [1381] LOG:  checkpoint starting: time
+2026-04-24 20:52:10.567 UTC [1381] LOG:  checkpoint complete: wrote 29 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.813 s, sync=0.003 s, total=2.826 s; sync files=25, longest=0.002 s, average=0.001 s; distance=19 kB, estimate=166 kB
+2026-04-24 21:20:53.605 UTC [6494] ERROR:  relation "movies_collection" does not exist at character 22
+2026-04-24 21:20:53.605 UTC [6494] STATEMENT:  SELECT 1 AS "a" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 18 AND "movies_collection"."user_id" = 2) LIMIT 1
+2026-04-24 21:20:53.627 UTC [6494] ERROR:  relation "movies_collection" does not exist at character 101
+2026-04-24 21:20:53.627 UTC [6494] STATEMENT:  SELECT "movies_collection"."id", "movies_collection"."user_id", "movies_collection"."movie_id" FROM "movies_collection" WHERE ("movies_collection"."movie_id" = 18 AND "movies_collection"."user_id" = 2) LIMIT 21
+2026-04-24 21:22:07.966 UTC [1381] LOG:  checkpoint starting: time
+2026-04-24 21:22:09.287 UTC [1381] LOG:  checkpoint complete: wrote 14 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.306 s, sync=0.004 s, total=1.321 s; sync files=14, longest=0.003 s, average=0.001 s; distance=19 kB, estimate=152 kB
+2026-04-24 21:27:07.349 UTC [1381] LOG:  checkpoint starting: time
+2026-04-24 21:27:08.166 UTC [1381] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.805 s, sync=0.004 s, total=0.817 s; sync files=9, longest=0.003 s, average=0.001 s; distance=17 kB, estimate=138 kB
+2026-04-24 21:32:07.177 UTC [1381] LOG:  checkpoint starting: time
+2026-04-24 21:32:07.695 UTC [1381] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.503 s, sync=0.004 s, total=0.519 s; sync files=6, longest=0.003 s, average=0.001 s; distance=11 kB, estimate=125 kB
+2026-04-24 21:47:07.944 UTC [1381] LOG:  checkpoint starting: time
+2026-04-24 21:47:08.062 UTC [1381] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.004 s, total=0.119 s; sync files=2, longest=0.003 s, average=0.002 s; distance=5 kB, estimate=113 kB
+2026-04-24 21:52:07.137 UTC [1381] LOG:  checkpoint starting: time
+2026-04-24 21:52:09.261 UTC [1381] LOG:  checkpoint complete: wrote 22 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.110 s, sync=0.004 s, total=2.124 s; sync files=22, longest=0.003 s, average=0.001 s; distance=24 kB, estimate=104 kB
+2026-04-24 21:53:24.306 UTC [1380] LOG:  received SIGHUP, reloading configuration files
+2026-04-24 21:53:24.378 UTC [1380] LOG:  received smart shutdown request
+2026-04-24 21:53:24.400 UTC [1380] LOG:  background worker "logical replication launcher" (PID 1386) exited with exit code 1
+2026-04-24 21:53:24.413 UTC [1381] LOG:  shutting down
+2026-04-24 21:53:24.419 UTC [1381] LOG:  checkpoint starting: shutdown immediate
+2026-04-24 21:53:24.469 UTC [1381] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.013 s, sync=0.005 s, total=0.057 s; sync files=13, longest=0.005 s, average=0.001 s; distance=22 kB, estimate=96 kB
+2026-04-24 21:53:24.493 UTC [1380] LOG:  database system is shut down
+2026-04-25 06:05:32.028 UTC [2047] LOG:  starting PostgreSQL 15.17 on x86_64-pc-linux-gnu, compiled by clang version 21.1.8, 64-bit
+2026-04-25 06:05:32.031 UTC [2047] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-04-25 06:05:32.036 UTC [2047] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-04-25 06:05:32.044 UTC [2050] LOG:  database system was shut down at 2026-04-24 21:53:24 UTC
+2026-04-25 06:05:32.056 UTC [2047] LOG:  database system is ready to accept connections

@@ -12,11 +12,11 @@
               src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/{{movie.poster_path}}" alt="{{movie.title}}" />
           </div>
       </div>
-      <div class="bg-gray-50 px-4 py-4 sm:px-6">
-          <div  class=" -m-1 h-12 mt-1 mb-5 "> 
-            <p class="mt-3 pl-8 text-gray-600  font-thin"> Data from: </p>
-            <a href="https://www.tmdb.org{{artwork.path}}" class="block overflow-hidden
-                        text-ellipsis pl-5 text-sky-600 pb-5"> tmdb.org{{artwork.path}}  </a>
+      <div>
+          <div> 
+            <p class="mt-3 pl-8 text-gray-600  font-thin">  </p>
+            
+          
           </div>
       </div>
     </div>
@@ -34,17 +34,21 @@
               {%endfor%}  </p>
               <div class="flex mt-2">
                 {% if user.is_authenticated %}
-                  <form method="POST" action="{% url 'add_to_collection' movie.id %}">
-                {% csrf_token %}
-                 <button class="text-white bg-red-500 px-3 py-1 rounded">
-                 ❤️ Like
-                </button>
-                </form >
+                <a class="text-white px-3 py-1 rounded"   
+                 hx-get="/movies/movie_review/add/{{movie.id}}" hx-target="body" hx-swap="beforeend"  href="#">reviews</a> 
+                
+                <form method="POST" action="{% url 'add_favorito' movie.id %}">
+                  {% csrf_token %}
+                 <button class="text-white px-3 py-1 rounded">
+                    ❤️ Favorito
+                 </button>
+                </form>
                 {% else %}
                 <a href="/login/" class="text-red-400">
-                Inicia sesión para dar like
+                  Inicia sesión para guardar en favoritos
                 </a>
-              {% endif %}
+                {% endif %}
+
                 
               </div> 
             
@@ -81,7 +85,7 @@
 </div>
 
               </p> 
-           <p class="block overflow-hidden mt-6 mb-3
+           <p class="block overflow-hidden mt-6 mb-3 
                         text-ellipsis dark:text-gray-200 text-xl font-bold"> Reseñas: </p>
             <div hx-trigger="listChanged from:body" hx-get="{% url 'movie_reviews' movie.id  %}" hx-target="this" >
             {% include "movies/reviews.html" %}

@@ -13,8 +13,27 @@ import requests
 from .models import Person
 from django.shortcuts import redirect, get_object_or_404
 from .models import Collection, Movie
+from .models import Favorito, Movie
 
 
+@login_required
+def add_favorito(request, movie_id):
+    movie = get_object_or_404(Movie, id=movie_id)
+
+    Favorito.objects.get_or_create(
+        user=request.user,
+        movie=movie
+    )
+
+    return redirect(request.META.get('HTTP_REFERER', '/movies/'))
+
+@login_required
+def favoritos(request):
+    items = Favorito.objects.filter(user=request.user)
+
+    return render(request, 'movies/favoritos.html', {
+        'items': items
+    })
 
 @login_required
 def my_reviews(request):

@@ -8,6 +8,8 @@ urlpatterns = [
     path('register/', register, name='register'),
     path('like/<int:movie_id>/', add_to_collection, name='add_to_collection'),
     path('collections/', collections, name='collections'),
+    path('favoritos/', favoritos, name='favoritos'),
+    path('favorito/add/<int:movie_id>/', add_favorito, name='add_favorito'),
     path('movie_review/add/<int:movie_id>/', add_review),
     path('my-reviews/', my_reviews, name='my_reviews'),
     path('actor/<int:person_id>/', actor_detail, name='actor_detail'),
